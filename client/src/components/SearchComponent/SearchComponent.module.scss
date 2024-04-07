@@ -1,0 +1,31 @@
+.search {
+    &__heading {
+        font-size: 3.2rem;
+        font-weight: 400;
+        margin-top: 0.5em;
+    }
+    &__filters {
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+        gap: 15px;
+    }
+    &__btn {
+        padding: 0.8em 1.7em !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 700px) {
+    .search {
+        &__filters {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        &__btn {
+            grid-column: 1/3;
+        }
+    }
+}

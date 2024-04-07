@@ -1,0 +1,101 @@
+.offerDetails {
+    margin-top: 70px;
+    padding-bottom: 200px;
+    height: 120vh;
+    &__content {
+        margin-top: 5em;
+    }
+
+    &__banner {
+        background-image: url(../../../assets/home-bg.png);
+        height: 270px;
+        padding-top: 3em;
+    }
+    &__main {
+      position: relative;
+      padding: 2em;
+      width: 100%;
+    }
+    &__contact {
+        min-width: 300px;
+        margin-top: 1em;
+        padding: 2em 1em;
+        text-align: center;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &-avatar {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #cecccc;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 400;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 0.2em;
+        }
+    }
+    &__info {
+        margin-top: 1em;
+
+        &-details {
+            margin-top: 1em;
+        }
+    }
+    &__bottom {
+        margin-top: 4em;
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin-top: 1em;
+        }
+    }
+    &__fav {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+@media (min-width: 700px) {
+    .offerDetails {
+        &__banner {
+            height: 150px;
+        }
+    }
+}
+@media (min-width: 800px) {
+    .offerDetails {
+        &__top {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+        }
+        &__info {
+            margin-left: 2em;
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .offerDetails {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__contact {
+            margin-left: 1em;
+            margin-top: 0;
+        }
+    }
+}

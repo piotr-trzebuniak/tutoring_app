@@ -1,0 +1,67 @@
+@import '../../colors.scss';
+
+.search {
+    &__form {
+        border: 1px solid #dcdcdc;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        input {
+            padding: 1.2em 2em 1.2em 0.7em;
+            border: none;
+            position: relative;
+            background-color: #f9f8fd;
+
+            &::placeholder {
+                color: $first-text-color;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        &-btn {
+            padding: 0.8em 1.7em !important;
+            display: flex;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        background: #f9f8fd;
+        border-radius: 10px;
+        margin-bottom: 1em;
+
+        &--location {
+            border-left: 1px solid #E0E0E0;
+            border-radius: 0;
+        }
+
+        &-icon {
+            padding-left: 0.8em;
+        }
+    }
+}
+
+
+
+@media (min-width: 700px) {
+    .search {
+        &__banner {
+            &-heading {
+                font-size: 6.4rem;
+            }
+        }
+        &__form {
+            width: 100%;                                                   
+            flex-direction: row;
+            background: #f9f8fd;
+            border-radius: 10px;
+        }
+        &__input {
+            margin-bottom: 0;
+            justify-content: space-between;
+        }
+    }
+}

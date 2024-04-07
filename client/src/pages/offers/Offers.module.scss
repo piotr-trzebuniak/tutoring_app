@@ -1,0 +1,54 @@
+.offers {
+    margin-top: 70px;
+    padding-bottom: 200px;
+    &__banner {
+        background-image: url(../../assets//home-bg.png);
+        height: 660px;
+        padding-top: 3em;
+    }
+    &__clean {
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+        margin-top: 0.5em;
+        padding-right: .5em;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(56, 55, 55);
+        }
+    }
+    &__heading {
+        font-size: 3.2rem;
+        font-weight: 400;
+        margin-top: 0.5em;
+    }
+    // &__filters {
+    //     padding-top: 1em;
+    //     display: grid;
+    //     grid-template-columns: repeat(1, 1fr);
+    //     justify-content: space-around;
+    //     gap: 15px;
+    // }
+    &__main {
+        padding: 2em 0;
+
+        &-heading {
+            font-size: 2.4rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+@media (min-width: 700px) {
+    .offers {
+        // &__filters {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+        &__banner {
+            height: 400px;
+        }
+    }
+}

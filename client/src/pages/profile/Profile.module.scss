@@ -1,0 +1,129 @@
+@import '../../colors.scss';
+
+.profile {
+    margin: 0 auto;
+    text-align: center;
+    padding: 9em 1em 0 1em;
+    max-width: 630px;
+    margin-bottom: 180px;
+
+    &__checkbox {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        padding-left: 1em;
+        position: absolute;
+        justify-content: space-between;
+        width: calc(100% - 35px);
+        font-size: 1.5rem;
+
+        &--unchecked {
+            bottom: 49px;
+            left: 30px;
+        }
+        &--checked {
+            bottom: 74px;
+            left: 30px;
+        }
+    }
+    &__avatar {
+        height: 240px;
+        width: 240px;
+        cursor: pointer;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #cecccc;
+        margin-top: 2em;
+    }
+    &__avatarInfo {
+        padding-top: 1em;
+    }
+
+    &__text {
+        padding-top: 1.5em;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 2em;
+        
+        button {
+            width: 45%;
+        }
+        &--checked {
+            background-color: $accent-hover-color;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3em;
+
+        &--input {
+            background: #f9f8fd;
+            border-radius: 10px;
+            margin-bottom: 1.2em;
+            padding: 1.2em 2em 1.2em 1em;
+            border: 1px solid #DCDCDC;
+            &::placeholder {
+                color: $first-text-color;
+                font-size: 1.4rem;
+                line-height: 20px;
+                font-family: 'Lexend Deca'
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        // &--checkbox {
+        //     text-align: left;
+        //     display: flex;
+        //     align-items: center;
+        //     margin-bottom: 2em;
+
+        //     input[type="checkbox"] {
+        //         width: 29px;
+        //         height: 29px;
+        //     }
+        //     span {
+        //         padding-left: 1em;
+        //     }
+
+        // }
+        // &--error {
+        //     text-align: left;
+        //     padding: 0 0 1em 0.8em;
+        //     color: #b40e0e;
+        // }
+    }
+    &__advertisement {
+        margin-top: 6em;
+    }
+    &__delete {margin-top: 2em;
+        background-color: #b40e0e;
+        width: 100%;
+        &:hover {
+            background-color: #eb1111;
+        }
+    }
+    &__deleteDiv {
+        margin-top: 3em;
+    }
+    &__deleteBtns {
+        margin-top: 3em;
+        display: flex;
+        justify-content: space-between;
+        &-yes {
+            background-color: #b40e0e;
+            &:hover {
+                background-color: #eb1111;
+            }
+        }
+
+    button {
+        width: 40%;
+    }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../../colors.scss';
+
+.home {
+    margin-bottom: 320px;
+    margin-top: 70px;
+    &__banner {
+        background-image: url(../../assets//home-bg.png);
+        height: 50vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+
+        &-heading {
+            font-size: 4.4rem;
+            font-weight: 400;
+            padding-bottom: 0.5em;
+        }
+    }
+    &__form {
+        width: 80%;
+        margin-top: 2em; 
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        background: #f9f8fd;
+        border-radius: 10px;
+        margin-bottom: 0.5em;
+
+        &-icon {
+            padding-left: 0.8em;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .home {
+        &__banner {
+            &-heading {
+                font-size: 6.4rem;
+            }
+        }
+        &__form {
+            max-width: 630px;
+            flex-direction: row;
+            background: #f9f8fd;
+            border-radius: 10px;
+        }
+        &__input {
+            margin-bottom: 0;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@import '../../../colors.scss';
+
+.myOffer {
+    margin: 0 auto;
+    text-align: center;
+    padding: 9em 1em 0 1em;
+    max-width: 630px;
+    margin-bottom: 150px;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    &__heading {
+        font-size: 3rem;
+    }
+    &__text {
+        padding-top: 1.5em;
+    }
+    &__label {
+        text-align: left;
+        padding-left: 0.5em;
+        padding-top: 0.8em;
+    }
+    &__input,
+    &__textarea {
+        background-color: #f9f8fd;
+        text-align: center;
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 1.2em 20px;
+        box-shadow: none;
+        cursor: pointer;
+        margin-top: 1em;
+        width: 100%;
+        font-family: 'Lexend Deca', sans-serif;
+
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: #000000;
+            text-align: center;
+        }
+    }
+    &__textarea {
+        height: 200px;
+        text-align: left;
+        resize: vertical;
+    }
+    &__publishBtn {
+        width: 100%;
+        margin-top: 1em;
+    }
+    &__avatar {
+        height: 240px;
+        width: 240px;
+        cursor: pointer;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #cecccc;
+        margin-top: 2em;
+    }
+    &__avatarInfo {
+        padding-top: 1em;
+    }
+    // &__btns {
+    //     display: flex;
+    //     flex-direction: column;
+    //     margin-bottom: 350px;
+
+    //     button {
+    //         margin-top: 2em;
+    //         width: 100%;
+    //     }
+    // }
+    // &__addBtn2 {
+    //     background-color: $accent-hover-color;
+
+    //     &:hover {
+    //         background-color: $accent-color;
+    //     }
+    // }
+    // &__offer {
+    //     background-color: #fff;
+    //     padding: 1em;
+    //     border-radius: 10px;
+    //     border: 1px solid #dcdcdc;
+    //     margin-top: 1em;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     text-align: center;
+
+    //     &-info {
+    //         text-align: left;
+
+    //         p {
+    //             padding-top: 0.3em;
+    //         }
+    //     }
+
+    //     &-btns, a {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: space-between;
+    //         min-width: 200px;
+
+    //         button {
+    //             margin-top: 1em;
+    //         }
+    //         &--red {
+    //             background: #b40e0e;
+    //             &:hover {
+    //                 background-color: #eb1111;
+    //             }
+    //         }
+    //     }
+
+    //     img {
+    //         border-radius: 50%;
+    //         height: 70px;
+    //         width: 70px;
+    //     }
+    // }
+}

@@ -1,0 +1,46 @@
+@import '../../colors.scss';
+.login {
+    margin: 0 auto;
+    text-align: center;
+    padding: 9em 1em 0 1em;
+    max-width: 630px;
+    margin-bottom: 50px;
+    height: 80vh;
+
+    &__text {
+        padding-top: 1em;
+    }
+
+    &__checkbox {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        padding-left: 0em;
+        position: absolute;
+        justify-content: space-between;
+        width: calc(100% - 35px);
+        font-size: 1.5rem;
+
+        &--unchecked {
+            bottom: 49px;
+            left: 30px;
+        }
+        &--checked {
+            bottom: 74px;
+            left: 30px;
+        }
+
+        input[type="checkbox"] {
+            width: 29px;
+            height: 29px;
+        }
+        span {
+            padding-left: 0.5em;
+        }
+        &-link {
+            color: $first-text-color;
+        }
+
+    }
+}

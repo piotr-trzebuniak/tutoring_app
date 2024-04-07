@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.6rem;
+    background-color: #e5e5e5;
+}
+
+.heading {
+    font-size: 4.4rem;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+}
+
+
+@media (min-width: 700px) {
+    .heading {
+        font-size: 6.4rem;
+    }
+}

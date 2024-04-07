@@ -1,0 +1,69 @@
+@import '../../colors.scss';
+
+.header {
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdcdc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        a {
+            color: $first-text-color;
+            text-decoration: none;
+            padding-left: 0.5em;
+            font-weight: 500;
+            font-size: 1.7rem;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+    &__login {
+        text-decoration: none;
+        color: $first-text-color;
+        padding-right: 1em;
+        display: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $hover-text-color;
+        }
+    }
+    &__register {
+        cursor: pointer;
+        display: none;
+    }
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid #cecccc;
+    }
+}
+
+@media (min-width: 700px) {
+    .header {
+        &__login {
+            display: block;
+        }
+        &__register {
+            display: inline-block;
+        }
+        &__icon {
+            display: none;
+        }
+    }
+}
